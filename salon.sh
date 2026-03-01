@@ -34,7 +34,7 @@ MAIN_MENU () {
 }
 MAIN_MENU
 # get customer phone number
-echo "What is your phone number?"
+echo -e "\nWhat is your phone number?"
 read CUSTOMER_PHONE
 CUSTOMER_NAME=$($PSQL "SELECT name FROM customers WHERE phone = '$CUSTOMER_PHONE'")
 
